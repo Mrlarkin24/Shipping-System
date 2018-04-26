@@ -22,7 +22,7 @@ public class ShipController
 	private ShipsService shipsService;
 	
 	
-	// Setup our method to display all ships in the 'ship' table
+	// Method to display all ships in the 'ship' table
 	@RequestMapping(value = "/showShips", method = RequestMethod.GET)	
 	public String getShips(Model s)
 	{
@@ -33,14 +33,14 @@ public class ShipController
 		return "showShips";
 	}
 	
-	// Setup our GET method to add a new ship to the 'ship' table
+	// GET method to add a new ship to the 'ship' table
 	@RequestMapping(value = "/addShip", method = RequestMethod.GET)	
 	public String getShips(@ModelAttribute("shipAdd") Ship m, HttpServletRequest h)
 	{
 		return "addShip";
 	}
 	
-	// Setup our POST method to add a new ship to the 'ship' table
+	// POST method to add a new ship to the 'ship' table
 	@RequestMapping(value = "/addShip", method = RequestMethod.POST)	
 	public String addShip(@Valid @ModelAttribute("shipAdd") Ship m, BindingResult result, HttpServletRequest h, Model s)
 	{
