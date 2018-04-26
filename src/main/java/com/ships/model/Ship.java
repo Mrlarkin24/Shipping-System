@@ -1,6 +1,7 @@
 package com.ships.model;
 
 import java.math.BigDecimal;
+import javax.validation.constraints.DecimalMin;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
