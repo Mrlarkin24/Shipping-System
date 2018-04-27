@@ -1,3 +1,18 @@
 table, th, td {
-    border: 1px solid black;
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #004cff;
+	color: white;
 }
